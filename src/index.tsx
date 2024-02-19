@@ -5,7 +5,10 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const rootElement = document.getElementById("root");
+if (!rootElement) throw new Error("Root element not found");
+
+const root = ReactDOM.createRoot(rootElement);
 root.render(
   <Provider store={store}>
     <BrowserRouter>

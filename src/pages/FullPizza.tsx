@@ -1,9 +1,13 @@
 import React from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
-const FullPizza = () => {
-  const [pizza, setPizza] = React.useState({});
+const FullPizza: React.FC = () => {
+  const navigate = useNavigate();
+  const [pizza, setPizza] = React.useState<{
+    imageUrl: string;
+    title: string;
+  }>();
 
   const { id } = useParams();
 
@@ -16,6 +20,7 @@ const FullPizza = () => {
         setPizza(data);
       } catch (e) {
         console.error(e);
+        navigate("/");
       }
     }
     getPizza();
