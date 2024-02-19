@@ -1,0 +1,31 @@
+input {
+  padding: 0px 0px 0px 35px;
+  width: 350px;
+  height: 45px;
+  border: 1px solid rgb(172, 171, 171);
+  border-radius: 5px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.lupa {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  fill: grey;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.xbtn {
+  position: absolute;
+  top: 16px;
+  right: 11px;
+  fill: grey;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
