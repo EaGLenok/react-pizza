@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './NotFoundBlock.module.scss'
+import React from "react";
+import styles from "./NotFoundBlock.module.scss";
 
 const NotFoundBlock = () => {
   return (
@@ -7,11 +7,13 @@ const NotFoundBlock = () => {
       <h1>
         <span>😔</span>
         <br />
-        Not found
-        </h1>
-        <p className={styles.description}>К сожалению данная страница отсутствует в нашем интернет-магазине</p>
-      </div>
-  )
-}
+        No information found
+      </h1>
+      <p className={styles.description}>
+        К сожалению данная страница отсутствует в нашем интернет-магазине
+      </p>
+    </div>
+  );
+};
 
 export default NotFoundBlock;
