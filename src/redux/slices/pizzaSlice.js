@@ -16,7 +16,7 @@ const pizzaSlice = createSlice({
   name: "pizza",
   initialState: {
     items: [],
-    status: "loading", // loading, success, error
+    status: "loading",
     searchValue: "",
   },
   reducers: {
