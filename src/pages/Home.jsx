@@ -56,9 +56,7 @@ const Home = () => {
       }
     })
     .map((item) => (
-      <Link key={item.id} to={`/pizza/${item.id}`}>
-        <PizzaBlock {...item} />
-      </Link>
+        <PizzaBlock key={item.id} {...item} />
     ));
   const skeleton = [...new Array(12)].map((_, index) => (
     <Skeleton key={index} />
